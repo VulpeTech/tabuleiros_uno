@@ -15,7 +15,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   height: 100vh;
 }
@@ -121,4 +121,51 @@ header nav a {
 .initial-section article p {
   font-size: 28px;
   color: #363636;
+}
+
+.about {
+ max-width: 1400px;
+ width: 100vw;
+}
+
+.default-title {
+  font-size: 3.75rem;
+  color: #363636;
+  text-align: start; 
+  font-weight: bold;
+}
+
+.firt-information{
+  display: flex;
+  max-height: 800px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.firt-information p{
+  font-size: 2.5rem;
+  color: #363636;
+  font-weight: lighter;
+  text-align: justify;
+  line-height: 2;
+}
+
+.firt-information img {
+  margin: 0;
+  max-width: 500px;
+}
+
+.products {
+  max-width: 1400px;
+  width: 100vw;
+}
+
+.products p{
+  margin-top: 80px;
+  font-size: 2.4rem;
+  color: #363636;
+  font-weight: lighter;
+  text-align: justify;
+  line-height: 2;
 }
