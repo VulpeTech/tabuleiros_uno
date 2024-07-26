@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tabuleiros UNO</title>
     <link rel="stylesheet" href="/styles/initial-page.css" />
+    <link rel="stylesheet" href="/styles/menu-drawer.css" />
+
+    <script src="/javascript/script.js" defer></script>
   </head>
   <body>
     <main>
       <header>
-        <nav>
+        <nav class="menu-header">
           <a href="#about-us">Quem Somos</a>
           <a href="#our-products">Nossos Produtos</a>
           <a href="#contact">Contato</a>
           <a href="#buy-online">Compre online</a>
         </nav>
+        <div class="menu-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </header>
       <section class="initial-section h-padding">
         <article class="greetings-article">
@@ -83,39 +91,44 @@
       </div>
       <section id="contact" class="contact h-padding">
         <h1 class="default-title">Contato</h1>
-        <p> Não nos contentamos apenas em atender às expectativas; buscamos superá-las. 
-          Nossa missão é oferecer produtos excepcionais e um serviço de excelência.</p>
-          <div class="contacts-forms">
-            <div class="social-media">
-              <div class="social">
-                <img src="./assets/instagram.png" alt="Icone Instagram">
-                <a href="">Instagram</a>
-              </div>
-              <div class="social">
-                <img src="./assets/whatsapp.png" alt="Icone Whatsapp">
-                <a href="">Whatsapp</a>
-              </div>
-              <div class="social">
-                <img src="./assets/linkedin.png" alt="Icone Linkedin">
-                <a href="">Linkedin</a>
-              </div>
-              <div class="social">
-                <img src="./assets/facebook.png" alt="Icone Facebook">
-                <a href="">Facebook</a>
-              </div>
-              <div class="social">
-                <img src="./assets/youtube.png" alt="Icone Youtube">
-                <a href="">Youtube</a>
-              </div>
+        <p>
+          Não nos contentamos apenas em atender às expectativas; buscamos
+          superá-las. Nossa missão é oferecer produtos excepcionais e um serviço
+          de excelência.
+        </p>
+        <div class="contacts-forms">
+          <div class="social-media">
+            <div class="social">
+              <img src="./assets/instagram.png" alt="Icone Instagram" />
+              <a href="">Instagram</a>
             </div>
-            <form action="">
-              <input type="text">
-              <input type="text">
-              <input type="text">
-              <input type="text">
-            </form>
+            <div class="social">
+              <img src="./assets/whatsapp.png" alt="Icone Whatsapp" />
+              <a href="">Whatsapp</a>
+            </div>
+            <div class="social">
+              <img src="./assets/linkedin.png" alt="Icone Linkedin" />
+              <a href="">Linkedin</a>
+            </div>
+            <div class="social">
+              <img src="./assets/facebook.png" alt="Icone Facebook" />
+              <a href="">Facebook</a>
+            </div>
+            <div class="social">
+              <img src="./assets/youtube.png" alt="Icone Youtube" />
+              <a href="">Youtube</a>
+            </div>
           </div>
-          <footer>Tabuleiros Uno Ltda. | CNPJ 26.416.405/0001-07 | (35) 99999-9999</footer>
+          <form action="">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </form>
+        </div>
+        <footer>
+          Tabuleiros Uno Ltda. | CNPJ 26.416.405/0001-07 | (35) 99999-9999
+        </footer>
       </section>
     </main>
   </body>
