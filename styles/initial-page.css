@@ -155,6 +155,20 @@ header nav a {
   min-width: 340px;
 }
 
+.button-home {
+  margin-top: 28px;
+  border-radius: 4px;
+  padding: 12px;
+  border: none;
+  background-color: #92007A;
+  color: white;
+  font-size: 0.75rem;
+}
+
+.button-home:hover {
+  background-color: #be18a3;
+}
+
 .default-title {
   font-size: 3.75rem;
   color: var(--color-text);
@@ -229,6 +243,70 @@ header nav a {
   padding: 0 36px;
 }
 
+.contact {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact p{
+  margin-top: 80px;
+  font-size: 1.8rem;
+  color: #363636;
+}
+
+.contacts-forms {
+  padding: 200px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social img{
+  height: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+input {
+  background: transparent;
+  border: 1px solid black;
+  font-size: 1rem;
+  padding: 12px;
+  width: 400px;
+  border-radius: 14px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .greetings-div img {
     width: 50vw;
@@ -257,6 +335,16 @@ header nav a {
   .about article {
     align-items: center;
   }
+
+  .contacts-forms {
+    flex-direction: column-reverse;
+    gap: 40px ;
+  }
+
+  form, input {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 513px) {
