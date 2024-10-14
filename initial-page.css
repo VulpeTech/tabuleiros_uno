@@ -185,7 +185,7 @@ header {
 
 .first-information {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 28px;
 }
@@ -201,6 +201,12 @@ header {
   margin: 0;
   max-width: 500px;
   width: 100%;
+}
+
+.line-between {
+  width: 100%;
+  max-width: fit-content;
+  border-top: 20px solid black;
 }
 
 .products {
