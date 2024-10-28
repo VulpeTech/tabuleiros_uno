@@ -45,7 +45,7 @@
             ao fascinante universo da Tabuleiros UNO,<br />
             onde a arte da confeitaria encontra sua base perfeita!
           </p>
-          <a class="button-home" href="">
+          <a class="button-home" href="https://wa.me/5535999135145">
             <h1>Entre em Contato</h1>
           </a>
         </article>
@@ -85,9 +85,11 @@
           materiais de alta qualidade, proporcionando uma base sólida e
           confiável para os projetos de confeitaria mais exigentes.
         </p>
-        <div>
-          <h1 class="title-product">CakeBoard</h1>
-          <hr class="line-between" />
+        <div class="products-container">
+          <div class="title-container">
+            <h1 class="title-product">CakeBoard</h1>
+            <hr class="line-between" />
+          </div>
           <h2 class="description-product">em MDF</h2>
         </div>
         <article class="first-information">
@@ -102,9 +104,11 @@
             trazer mais sofisticação e requinte à mesa do bolo
           </p>
         </article>
-        <div>
-          <h1 class="title-product">Tabuleiro</h1>
-          <hr class="line-between" />
+        <div class="products-container invert-text">
+          <div class="title-container">
+            <h1 class="title-product">Tabuleiro</h1>
+            <hr class="line-between" />
+          </div>
           <h2 class="description-product">em MDF</h2>
         </div>
         <article class="first-information second">
@@ -117,9 +121,11 @@
           </p>
           <img src="assets/06.png" alt="" />
         </article>
-        <div>
-          <h1 class="title-product">Festas</h1>
-          <hr class="line-between" />
+        <div class="products-container">
+          <div class="title-container">
+            <h1 class="title-product">Festas</h1>
+            <hr class="line-between" />
+          </div>
           <h2 class="description-product">artigos em MDF</h2>
         </div>
         <article class="first-information">
@@ -170,11 +176,16 @@
               >
             </div>
           </div>
-          <form action="">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
+          <form action="/submit" method="POST">
+            <label>Nome:</label>
+            <input placeholder="Digite seu nome" id="input1" type="text" required/>
+            <label>Email:</label>
+            <input placeholder="Digite seu email" id="input2" type="email" required/>
+            <label>Telefone:</label>
+            <input placeholder="Digite seu telefone" id="input3" type="tel" required/>
+            <label>Mensagem:</label>
+            <textarea placeholder="Solicite seu orçamento ou informações" id="input4" type="text-area" required></textarea>
+            <button class="button" type="submit" value="submit">Enviar</button>
           </form>
         </div>
         <footer>
