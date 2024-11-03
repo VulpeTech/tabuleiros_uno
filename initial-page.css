@@ -13,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -185,14 +186,17 @@ header {
 
 .first-information {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 28px;
 }
 
+.format-colum{
+  flex-direction: column;
+}
+
 .first-information p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--color-text);
   text-align: justify;
   line-height: 2;
@@ -216,8 +220,14 @@ header {
   display: inline-block;
 }
 
+.image-products{
+  min-width: 80vw;
+}
+
 .products-container {
   padding: 50px 50px 20px 50px;
+  align-items: center;
+  justify-items: center;
 }
 
 .title-product {
@@ -238,7 +248,7 @@ header {
 
 .products p {
   margin-top: 80px;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #363636;
   text-align: justify;
   line-height: 2;
@@ -365,6 +375,9 @@ footer {
 }
 
 @media (max-width: 860px) {
+  .default-title {
+    font-size: 20%;
+  }
   .greetings-div img {
     bottom: 72px;
   }
@@ -380,7 +393,7 @@ footer {
 
   .first-information p,
   .products p {
-    font-size: 28px;
+    font-size: 18px;
   }
 
   .about article {
@@ -396,6 +409,10 @@ footer {
   input {
     width: 100%;
   }
+  .first-information p,
+  .products p {
+    padding: 0px 0px 100px 0px;
+  }
 
     .title-product, description-product {
     font-size: 30px;
@@ -403,6 +420,11 @@ footer {
     .products-container{
       padding: 0;
     }
+
+  footer {
+    font-size: 90%;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 513px) {
