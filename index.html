@@ -6,8 +6,6 @@
     <title>Tabuleiros UNO</title>
     <link rel="stylesheet" href="initial-page.css" />
     <link rel="stylesheet" href="menu-drawer.css" />
-
-    <script src="/javascript/script.js" defer></script>
   </head>
   <body>
     <main>
@@ -190,9 +188,10 @@
               >
             </div>
           </div>
-          <form action="/submit" method="POST">
+          <form id="contactForm" class="mensagem">
             <label>Nome:</label>
             <input
+              class="name"
               placeholder="Digite seu nome"
               id="input1"
               type="text"
@@ -200,6 +199,7 @@
             />
             <label>Email:</label>
             <input
+              class="email"
               placeholder="Digite seu email"
               id="input2"
               type="email"
@@ -207,6 +207,7 @@
             />
             <label>Telefone:</label>
             <input
+              class="phone"
               placeholder="Digite seu telefone"
               id="input3"
               type="tel"
@@ -214,12 +215,13 @@
             />
             <label>Mensagem:</label>
             <textarea
+              class="message"
               placeholder="Solicite seu orçamento ou informações"
               id="input4"
               type="text-area"
               required
             ></textarea>
-            <button class="button" type="submit" value="submit">Enviar</button>
+            <button class="button">Enviar</button>
           </form>
         </div>
         <footer>
@@ -230,5 +232,17 @@
         </footer>
       </section>
     </main>
+    <script src="javascript/mailer.js" type="module"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "Aqib82GdxCSIWLQ5n",
+        });
+      })();
+    </script>
   </body>
 </html>
